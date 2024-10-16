@@ -31,12 +31,67 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sunparis.github.io/VectorPro.site/functions/capacity/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sunparis.github.io/VectorPro.site/functions/cbegin/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sunparis.github.io/VectorPro.site/functions/cend/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sunparis.github.io/VectorPro.site/functions/clear/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sunparis.github.io/VectorPro.site/functions/constructor/</loc>
          <lastmod>2024-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sunparis.github.io/VectorPro.site/functions/crbegin/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sunparis.github.io/VectorPro.site/functions/crend/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sunparis.github.io/VectorPro.site/functions/data/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sunparis.github.io/VectorPro.site/functions/destructor/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sunparis.github.io/VectorPro.site/functions/emplace/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sunparis.github.io/VectorPro.site/functions/emplace_back/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sunparis.github.io/VectorPro.site/functions/empty/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sunparis.github.io/VectorPro.site/functions/end/</loc>
          <lastmod>2024-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
