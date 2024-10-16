@@ -10,4 +10,24 @@
          <lastmod>2024-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://example.com/functions/function_name/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/functions/vector_pro%28%29/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/functions/~vector_pro%28%29/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/tests/test1/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
