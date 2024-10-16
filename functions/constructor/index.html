@@ -648,8 +648,8 @@
                   
 
 
-<h1 id="vector_provector_pro">vector_pro::vector_pro()</h1>
-<div class="language-c++ highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// default</span>
+<h1 id="vector_provector_pro">vector_pro::vector_pro()<a class="headerlink" href="#vector_provector_pro" title="Permanent link">&para;</a></h1>
+<div class="language-c++ highlight"><span class="filename">C++</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// default</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">vector</span><span class="p">();</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1">// fill </span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">vector_pro</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">size_type</span><span class="w"> </span><span class="n">len</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="o">&amp;</span><span class="w"> </span><span class="n">val</span><span class="p">);</span>
@@ -666,54 +666,51 @@
 </span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="c1">// traditional array</span>
 </span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="n">vector_pro</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="o">*</span><span class="n">arr</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">size_type</span><span class="w"> </span><span class="n">len</span><span class="p">);</span>
 </span></code></pre></div>
-<h3 id="construct-vector">Construct vector</h3>
+<h3 id="construct-vector">Construct vector<a class="headerlink" href="#construct-vector" title="Permanent link">&para;</a></h3>
 <p>Constructs a <a href="https://sunparis.github.io/VectorPro.site/#vector_pro">vector_pro</a>, initializing its contents depending on the constructor version used:</p>
 <ol>
 <li>
-<p><strong>default constructor</strong>: Constructs an container, with <a href="https://sunparis.github.io/VectorPro.site/#member-types-and-macros"><code>VECTOR_PRO_DEFAULT_SIZE</code></a>.</p>
+<p><strong>default constructor</strong> <br>Constructs an container, with <a href="https://sunparis.github.io/VectorPro.site/#member-types-and-macros"><code>VECTOR_PRO_DEFAULT_SIZE</code></a>.</p>
 </li>
 <li>
-<p><strong>fill constructor</strong>: Constructs a container with <code>len</code> elements. Each element is a copy of <code>val</code> (if provided).</p>
+<p><strong>fill constructor</strong><br> Constructs a container with <code>len</code> elements. Each element is a copy of <code>val</code> (if provided).</p>
 </li>
 <li>
-<p><strong>range constructor</strong>: Constructs a container with as many elements as the range <code>[from, exclude_to)</code> and in the same order.</p>
+<p><strong>range constructor</strong><br> Constructs a container with as many elements as the range <code>[from, exclude_to)</code> and in the same order.</p>
 </li>
 <li>
-<p><strong>copy constructor</strong>: Constructs a container with a copy of each of the elements in <code>another</code>, in the same order.</p>
+<p><strong>copy constructor</strong> <br>Constructs a container with a copy of each of the elements in <code>another</code>, in the same order.</p>
 </li>
 <li>
-<p><strong>move constructor</strong>: Constructs a container by <em>moving</em> each of the elements in <code>another</code>, in the same order.</p>
+<p><strong>move constructor</strong> <br>Constructs a container by <em>moving</em> each of the elements in <code>another</code>, in the same order.</p>
 </li>
 <li>
-<p><strong>std::vector constructor</strong>: Constructs a container with a copy of each of the elements in <code>another</code>, in the same order.</p>
+<p><strong>std::vector constructor</strong><br>Constructs a container with a copy of each of the elements in <code>another</code>, in the same order.</p>
 </li>
 <li>
-<p><strong>initializer list constructor</strong>: Constructs a container with a copy of each of the elements in <code>another</code>, in the same order.</p>
+<p><strong>initializer list constructor</strong><br> Constructs a container with a copy of each of the elements in <code>another</code>, in the same order.</p>
 </li>
 <li>
-<p><strong>traditional array constructor</strong>: Constructs a container with a copy of each of the elements in <code>another</code>, in the same order.</p>
+<p><strong>traditional array constructor</strong><br>Constructs a container with a copy of each of the elements in <code>another</code>, in the same order.</p>
 </li>
 </ol>
-<h3 id="parameters">Parameters</h3>
+<h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h3>
 <ol>
-<li><code>len</code></li>
+<li>
+<p><code>len</code><br>Initial container size.</p>
+</li>
+<li>
+<p><code>val</code><br>Value to fill the container with.</p>
+</li>
+<li>
+<p><code>another</code><br>Another container object of the same type.<br>Can be a <a href="Another [vector](https://cplusplus.com/vector) object of the same type"><code>std::vector</code></a> , <a href="https://cplusplus.com/initializer_list"><code>std::inializer_list</code></a> or just another <a href="https://sunparis.github.io/VectorPro.site/#vector_pro"><code>vector_pro</code></a>.</p>
+</li>
+<li>
+<p><code>from</code>, <code>exclude_to</code><br><a href=""><code>Iterators</code></a> to the initial and final positions in a range. The range used is <code>[from, exclude_to)</code>, which includes all the elements between <code>from</code> and <code>exclude_to</code> , including the element pointed by <code>from</code> but not the element pointed by <code>exclude_to</code>. </p>
+</li>
 </ol>
-<p>Initial container size.</p>
-<ol>
-<li><code>val</code></li>
-</ol>
-<p>Value to fill the container with.</p>
-<ol>
-<li><code>another</code></li>
-</ol>
-<p>Another container object of the same type.</p>
-<p>Can be a <a href="Another [vector](https://cplusplus.com/vector) object of the same type"><code>std::vector</code></a> , <a href="https://cplusplus.com/initializer_list"><code>std::inializer_list</code></a> or just another <a href="https://sunparis.github.io/VectorPro.site/#vector_pro"><code>vector_pro</code></a>.</p>
-<ol>
-<li><code>from</code>, <code>exclude_to</code></li>
-</ol>
-<p><a href=""><code>Iterators</code></a> to the initial and final positions in a range. The range used is <code>[from, exclude_to)</code>, which includes all the elements between <code>from</code> and <code>exclude_to</code> , including the element pointed by <code>from</code> but not the element pointed by <code>exclude_to</code>. </p>
-<h3 id="example">Example</h3>
-<div class="language-c++ highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// constructing vectors</span>
+<h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
+<div class="language-c++ highlight"><span class="filename">C++</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// constructing vectors</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;vector_pro.hpp&quot;</span>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
@@ -757,7 +754,7 @@
 </span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 </span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a><span class="p">}</span>
 </span></code></pre></div>
-<h3 id="complexity">Complexity</h3>
+<h3 id="complexity">Complexity<a class="headerlink" href="#complexity" title="Permanent link">&para;</a></h3>
 <p>Constant for the <code>default constructor</code> (1), and for the <code>move constructors</code> (5) .
 For all other cases, linear in the resulting container <a href="">size</a>.</p>
 
@@ -806,7 +803,7 @@ For all other cases, linear in the resulting container <a href="">size</a>.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.code.annotate //"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>

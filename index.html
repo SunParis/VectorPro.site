@@ -746,20 +746,20 @@
                   
 
 
-<h1 id="welcome-to-vectorpros-tutorial-site">Welcome to VectorPro's Tutorial Site</h1>
+<h1 id="welcome-to-vectorpros-tutorial-site">Welcome to VectorPro's Tutorial Site<a class="headerlink" href="#welcome-to-vectorpros-tutorial-site" title="Permanent link">&para;</a></h1>
 <p>Source code is <a href="https://youtu.be/dQw4w9WgXcQ?si=TpsYsCaOUEsygZXm">here</a>.</p>
-<h2 id="vector_pro">vector_pro</h2>
-<div class="language-c++ highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">value_type</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">vector_pro</span><span class="p">;</span><span class="w"> </span><span class="c1">// generic template</span>
+<h2 id="vector_pro">vector_pro<a class="headerlink" href="#vector_pro" title="Permanent link">&para;</a></h2>
+<div class="language-c++ highlight"><span class="filename">C++</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">value_type</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">vector_pro</span><span class="p">;</span><span class="w"> </span><span class="c1">// generic template</span>
 </span></code></pre></div>
 <p>Same as std::vectors, vector_pros are sequence containers representing arrays that can change in size.</p>
 <p>Vector_pros use contiguous storage locations for their elements. Unlike arrays, their size can change dynamically, with their storage being handled automatically by the container.</p>
 <p>Don't have much differences with vectors, vector_pros use a dynamically allocated array to store their elements. Instead of reallocating each time an element is added to the container, vector_pro containers may allocate some extra storage to accommodate for possible growth, and thus the container may have an actual capacity greater than the storage strictly needed to contain its elements. However we currently not support libraries to implement different strategies for memory growth, we just simply double the capacity at logarithmically growing intervals of size so that the insertion of individual elements at the end of the vector can be provided with amortized constant time complexity.</p>
 <p><del>Most of the above text are just copied from <a href="https://cplusplus.com/reference/vector/vector/">std::vector</a>.</del></p>
-<h2 id="template-parameters">Template parameters</h2>
-<div class="language-c++ highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">value_type</span><span class="o">&gt;</span>
+<h2 id="template-parameters">Template parameters<a class="headerlink" href="#template-parameters" title="Permanent link">&para;</a></h2>
+<div class="language-c++ highlight"><span class="filename">C++</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">value_type</span><span class="o">&gt;</span>
 </span></code></pre></div>
 <p>Only if <code>value_type</code> is guaranteed to not throw while moving, implementations can optimize to move elements instead of copying them during reallocations.</p>
-<h2 id="member-types-and-macros">Member types and Macros</h2>
+<h2 id="member-types-and-macros">Member types and Macros<a class="headerlink" href="#member-types-and-macros" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -791,7 +791,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="member-functions">Member functions</h2>
+<h2 id="member-functions">Member functions<a class="headerlink" href="#member-functions" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -814,7 +814,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="itertators">Itertators</h4>
+<h4 id="itertators">Itertators<a class="headerlink" href="#itertators" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -857,7 +857,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="capacity">Capacity</h4>
+<h4 id="capacity">Capacity<a class="headerlink" href="#capacity" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -896,7 +896,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="element-access">Element access</h4>
+<h4 id="element-access">Element access<a class="headerlink" href="#element-access" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -927,7 +927,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="modifiers">Modifiers</h4>
+<h4 id="modifiers">Modifiers<a class="headerlink" href="#modifiers" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -974,7 +974,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="differences-from-stdvector">Differences from std::vector</h4>
+<h4 id="differences-from-stdvector">Differences from std::vector<a class="headerlink" href="#differences-from-stdvector" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -1063,7 +1063,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy", "content.code.select", "content.code.annotate //"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy", "content.code.select", "content.code.annotate"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.a7c05c9e.min.js"></script>
