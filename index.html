@@ -1536,15 +1536,16 @@
 <h1 id="welcome-to-vectorpros-tutorial-site">Welcome to VectorPro's Tutorial Site</h1>
 <p>Source code is <a href="https://youtu.be/dQw4w9WgXcQ?si=TpsYsCaOUEsygZXm">here</a>.</p>
 <h2 id="vector_pro">vector_pro</h2>
-<pre><code class="language-c++">template &lt; typename T &gt; class vector_pro; // generic template
+<pre><code class="language-c++">template &lt; class T &gt; class vector_pro; // generic template
 </code></pre>
-<p>Same as std::vector, vector_pros are sequence containers representing arrays that can change in size.</p>
+<p>Same as std::vectors, vector_pros are sequence containers representing arrays that can change in size.</p>
 <p>Vector_pros use contiguous storage locations for their elements. Unlike arrays, their size can change dynamically, with their storage being handled automatically by the container.</p>
 <p>Don't have much differences with vectors, vector_pros use a dynamically allocated array to store their elements. Instead of reallocating each time an element is added to the container, vector_pro containers may allocate some extra storage to accommodate for possible growth, and thus the container may have an actual <a href="">capacity</a> greater than the storage strictly needed to contain its elements (i.e., its <a href="">size</a>). However we currently not support libraries to implement different strategies for growth to balance between memory usage and reallocations, we just simply double the capacity at logarithmically growing intervals of <a href="">size</a> so that the insertion of individual elements at the end of the vector can be provided with <em>amortized constant time</em> complexity (see <a href="">push_back</a>).</p>
+<p><del>Most of the above text is just copied from <a href="https://cplusplus.com/reference/vector/vector/">std::vector</a>.</del></p>
 <h2 id="template-parameters">Template parameters</h2>
-<pre><code class="language-c++">template &lt;typename T&gt;
+<pre><code class="language-c++">template &lt;class T&gt;
 </code></pre>
-<p>Only if <code>T</code> <a href="">is guaranteed to not throw while moving</a>, implementations can optimize to move elements instead of copying them during reallocations.</p>
+<p>Only if <code>T</code> is guaranteed to not throw while moving, implementations can optimize to move elements instead of copying them during reallocations.</p>
 <h2 id="member-types">Member types</h2>
 <table>
 <thead>
@@ -1557,18 +1558,18 @@
 <tbody>
 <tr>
 <td><code>iterator_pro</code></td>
-<td>a <a href="">random access iterator</a> to <code>value_type</code></td>
+<td>a random access iterator to <code>value_type</code></td>
 <td>convertible to <code>const_iterator</code></td>
 </tr>
 <tr>
 <td><code>const_iterator_pro</code></td>
-<td>a <a href="">random access iterator</a> to <code>const value_type</code></td>
+<td>a random access iterator to <code>const value_type</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>size_type</code></td>
 <td>an unsigned integral type</td>
-<td>usually the same as <a href="">int64_t</a></td>
+<td>In 64-bit system will be <code>int64_t</code>; 32-bit system will be <code>int32_t</code>; the others will just be <code>long int</code>.</td>
 </tr>
 </tbody>
 </table>
@@ -1703,8 +1704,8 @@
 <td>Access last element (public member function)</td>
 </tr>
 <tr>
-<td><del><a href="https://cplusplus.com/reference/vector/vector/data/"><strong>data</strong></a></del></td>
-<td><del>Access data (public member function)</del></td>
+<td><del><a href=""><strong>data</strong></a></del></td>
+<td><del>Access data</del></td>
 </tr>
 </tbody>
 </table>
