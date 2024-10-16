@@ -648,19 +648,124 @@
                   
 
 
-<h1 id="vector_provector_pro">vector_pro::~vector_pro</h1>
-<pre><code class="language-c++">// code
+<h1 id="vector_provector_pro">vector_pro::vector_pro()</h1>
+<pre><code class="language-c++">// default
+vector();
+// fill 
+vector_pro(const size_type len, const value_type&amp; val);
+// range    
+vector_pro(const_iterator_pro&lt;value_type&gt;from, const_iterator_pro&lt;value_type&gt;exclude_to);
+// copy
+vector_pro(const vector_pro&lt;value_type&gt;&amp; another);
+// move
+vector_pro(vector_pro&lt;value_type&gt;&amp;&amp; another);
+// std::vector  
+vector_pro(const std::vector&lt;value_type&gt;&amp; another);
+// initializer list
+vector_pro(const std::initializer_list&lt;value_type&gt; &amp;another);
+// traditional array
+vector_pro(const value_type *arr, const size_type len);
 </code></pre>
 <h3 id="construct-vector">Construct vector</h3>
-<p>//</p>
+<p>Constructs a <a href="https://sunparis.github.io/VectorPro.site/#vector_pro">vector_pro</a>, initializing its contents depending on the constructor version used:</p>
+<ol>
+<li><strong>default constructor</strong></li>
+</ol>
+<p>​           Constructs an container, with <a href="https://sunparis.github.io/VectorPro.site/#member-types-and-macros"><code>VECTOR_PRO_DEFAULT_SIZE</code></a>.</p>
+<ol>
+<li><strong>fill constructor</strong></li>
+</ol>
+<p>​           Constructs a container with <code>len</code> elements. Each element is a copy of <code>val</code> (if provided).</p>
+<ol>
+<li><strong>range constructor</strong></li>
+</ol>
+<p>​           Constructs a container with as many elements as the range <code>[from, exclude_to)</code> and in the same order.</p>
+<ol>
+<li><strong>copy constructor</strong></li>
+</ol>
+<p>​           Constructs a container with a copy of each of the elements in <code>another</code>, in the same order.</p>
+<ol>
+<li><strong>move constructor</strong></li>
+</ol>
+<p>​           Constructs a container by <em>moving</em> each of the elements in <code>another</code>, in the same order.</p>
+<ol>
+<li><strong>std::vector constructor</strong></li>
+</ol>
+<p>​           Constructs a container with a copy of each of the elements in <code>another</code>, in the same order.</p>
+<ol>
+<li><strong>initializer list constructor</strong></li>
+</ol>
+<p>​           Constructs a container with a copy of each of the elements in <code>another</code>, in the same order.</p>
+<ol>
+<li><strong>traditional array constructor</strong></li>
+</ol>
+<p>​           Constructs a container with a copy of each of the elements in <code>another</code>, in the same order.</p>
 <h3 id="parameters">Parameters</h3>
-<p>//</p>
+<ol>
+<li><code>len</code></li>
+</ol>
+<p>Initial container size.</p>
+<ol>
+<li><code>val</code></li>
+</ol>
+<p>Value to fill the container with.</p>
+<ol>
+<li><code>another</code></li>
+</ol>
+<p>Another container object of the same type.</p>
+<p>Can be a <a href="Another [vector](https://cplusplus.com/vector) object of the same type"><code>std::vector</code></a> , <a href="https://cplusplus.com/initializer_list"><code>std::inializer_list</code></a> or just another <a href="https://sunparis.github.io/VectorPro.site/#vector_pro"><code>vector_pro</code></a>.</p>
+<ol>
+<li><code>from</code>, <code>exclude_to</code></li>
+</ol>
+<p><a href=""><code>Iterators</code></a> to the initial and final positions in a range. The range used is <code>[from, exclude_to)</code>, which includes all the elements between <code>from</code> and <code>exclude_to</code> , including the element pointed by <code>from</code> but not the element pointed by <code>exclude_to</code>. </p>
 <h3 id="example">Example</h3>
-<pre><code class="language-c++">// code
+<pre><code class="language-c++">// constructing vectors
+#include &lt;iostream&gt;
+#include &quot;vector_pro.hpp&quot;
+
+/**
+ * Output:
+ * The contents of fifth are: [ 100, 100, 100, 100 ]
+ * While in fourth will be: [ null ]
+ */
+
+int main () {
+  // constructors used in the same order as described above:
+
+  // empty vector_pro of ints
+  vector_pro&lt;int&gt; first;     
+
+  // four ints with value 100
+  vector_pro&lt;int&gt; second (4,100);                       
+
+  // iterating through second
+  vector_pro&lt;int&gt; third (second.begin(),second.end());  
+
+  // a copy of third
+  vector_pro&lt;int&gt; fourth (third);
+
+  // a `move` from fourth
+  vector_pro&lt;int&gt; fifth (std::move(fourth));
+  std::cout &lt;&lt; &quot;The contents of fifth are: &quot; &lt;&lt; fifth &lt;&lt; std::endl;
+  std::cout &lt;&lt; &quot;While in fourth will be: &quot; &lt;&lt; fourth &lt;&lt; std::endl;
+
+  // a copy from std::vector
+  std::vector&lt;int&gt; myints = {1, 2, 3, 4, 5};
+  vector_pro&lt;int&gt; sixth (myints);
+
+  // a copy from initializer list
+  vector_pro&lt;int&gt; seventh = {1, 2, 3, 4, 5};
+
+  // a copy from initializer list
+  int arr[5] = {0, 1, 2, 3, 4};
+  vector_pro&lt;int&gt; eighth (arr, 5);
+
+  return 0;
+}
 </code></pre>
-<p>//</p>
 <h3 id="complexity">Complexity</h3>
-<p>///</p>
+<p>Constant for the <code>default constructor</code> (1), and for the <code>move constructors</code> (5) .
+For all other cases, linear in the resulting container <a href="">size</a>.</p>
 
 
 

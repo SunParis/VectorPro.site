@@ -291,9 +291,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#member-types" class="md-nav__link">
+  <a href="#member-types-and-macros" class="md-nav__link">
     <span class="md-ellipsis">
-      Member types
+      Member types and Macros
     </span>
   </a>
   
@@ -663,9 +663,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#member-types" class="md-nav__link">
+  <a href="#member-types-and-macros" class="md-nav__link">
     <span class="md-ellipsis">
-      Member types
+      Member types and Macros
     </span>
   </a>
   
@@ -749,17 +749,17 @@
 <h1 id="welcome-to-vectorpros-tutorial-site">Welcome to VectorPro's Tutorial Site</h1>
 <p>Source code is <a href="https://youtu.be/dQw4w9WgXcQ?si=TpsYsCaOUEsygZXm">here</a>.</p>
 <h2 id="vector_pro">vector_pro</h2>
-<pre><code class="language-c++">template &lt; class T &gt; class vector_pro; // generic template
+<pre><code class="language-c++">template &lt; class value_type &gt; class vector_pro; // generic template
 </code></pre>
 <p>Same as std::vectors, vector_pros are sequence containers representing arrays that can change in size.</p>
 <p>Vector_pros use contiguous storage locations for their elements. Unlike arrays, their size can change dynamically, with their storage being handled automatically by the container.</p>
 <p>Don't have much differences with vectors, vector_pros use a dynamically allocated array to store their elements. Instead of reallocating each time an element is added to the container, vector_pro containers may allocate some extra storage to accommodate for possible growth, and thus the container may have an actual capacity greater than the storage strictly needed to contain its elements. However we currently not support libraries to implement different strategies for memory growth, we just simply double the capacity at logarithmically growing intervals of size so that the insertion of individual elements at the end of the vector can be provided with amortized constant time complexity.</p>
 <p><del>Most of the above text are just copied from <a href="https://cplusplus.com/reference/vector/vector/">std::vector</a>.</del></p>
 <h2 id="template-parameters">Template parameters</h2>
-<pre><code class="language-c++">template &lt;class T&gt;
+<pre><code class="language-c++">template &lt;class value_type&gt;
 </code></pre>
-<p>Only if <code>T</code> is guaranteed to not throw while moving, implementations can optimize to move elements instead of copying them during reallocations.</p>
-<h2 id="member-types">Member types</h2>
+<p>Only if <code>value_type</code> is guaranteed to not throw while moving, implementations can optimize to move elements instead of copying them during reallocations.</p>
+<h2 id="member-types-and-macros">Member types and Macros</h2>
 <table>
 <thead>
 <tr>
@@ -782,7 +782,12 @@
 <tr>
 <td><code>size_type</code></td>
 <td>an unsigned integral type</td>
-<td>In 64-bit system will be <code>int64_t</code>; 32-bit system will be <code>int32_t</code>; the others will just be <code>long int</code>.</td>
+<td>in a 64-bit system will be <code>int64_t</code>; 32-bit system will be <code>int32_t</code>; the others will just be <code>long int</code>.</td>
+</tr>
+<tr>
+<td><code>VECTOR_PRO_DEFAULT_SIZE</code></td>
+<td>initial size of a vector</td>
+<td>default will be 64, self-defined is available</td>
 </tr>
 </tbody>
 </table>
