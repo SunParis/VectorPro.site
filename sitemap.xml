@@ -11,17 +11,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://example.com/functions/constructor/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/functions/destructor/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://example.com/functions/function_name/</loc>
-         <lastmod>2024-10-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://example.com/functions/vector_pro/</loc>
-         <lastmod>2024-10-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://example.com/functions/~vector_pro/</loc>
          <lastmod>2024-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
