@@ -1,32 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://example.com/</loc>
+         <loc>https://sunparis.github.io/VectorPro.site/</loc>
          <lastmod>2024-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/see_also/</loc>
+         <loc>https://sunparis.github.io/VectorPro.site/see_also/</loc>
          <lastmod>2024-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/functions/constructor/</loc>
+         <loc>https://sunparis.github.io/VectorPro.site/functions/assign/</loc>
          <lastmod>2024-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/functions/destructor/</loc>
+         <loc>https://sunparis.github.io/VectorPro.site/functions/constructor/</loc>
          <lastmod>2024-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/functions/function_name/</loc>
+         <loc>https://sunparis.github.io/VectorPro.site/functions/destructor/</loc>
          <lastmod>2024-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/tests/test1/</loc>
+         <loc>https://sunparis.github.io/VectorPro.site/functions/function_name/</loc>
+         <lastmod>2024-10-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sunparis.github.io/VectorPro.site/tests/test1/</loc>
          <lastmod>2024-10-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
