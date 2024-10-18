@@ -1472,13 +1472,14 @@
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kt">void</span><span class="w"> </span><span class="n">swap</span><span class="p">(</span><span class="n">vector_pro</span><span class="o">&lt;</span><span class="n">value_type</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">another</span><span class="p">);</span>
 </span></code></pre></div></td></tr></table></div>
 <h3 id="swap-content">Swap content<a class="headerlink" href="#swap-content" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>Different from <a href="https://cplusplus.com/reference/vector/vector"><code>std::vector</code></a> , the <code>vector_pro::swap</code> has two using ways.</p>
-</blockquote>
 <ol>
 <li><strong>Swap contents between two index</strong> ( 1. 2. ): <br>After calling this function, the contents at the two indexes will be moved to another index.</li>
 <li><strong>Swap containers</strong> ( 3. ): <br>After the call to this member function, the elements in this container are those which were in <code>another</code> before the call, and the elements of <code>another</code> are those which were in this. All iterators, references and pointers remain valid for the swapped objects.</li>
 </ol>
+<blockquote>
+<p>Different from <a href="https://cplusplus.com/reference/vector/vector"><code>std::vector</code></a> , the <code>vector_pro::swap</code> has two using ways.</p>
+<p>Please note that calling the function by passing illegal <code>idx1</code> or <code>idx2</code> will get an exception.</p>
+</blockquote>
 <h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h3>
 <ol>
 <li><code>idx1</code> , <code>idx2</code><br>Target index. (can be in different container but should have the same type)</li>

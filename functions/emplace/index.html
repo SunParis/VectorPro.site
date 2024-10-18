@@ -1473,14 +1473,18 @@
 <p>The container is extended by inserting a new element <code>val</code> at <code>position</code>. </p>
 <p>This effectively increases the container <a href="https://sunparis.github.io/VectorPro.site/functions/size">size</a> by one.</p>
 <p>An automatic reallocation of the allocated storage space happens if -and only if- the new vector <a href="https://sunparis.github.io/VectorPro.site/functions/size">size</a> surpasses the current vector <a href="https://sunparis.github.io/VectorPro.site/functions/capacity">capacity</a>.</p>
-<p>A similar member function exists, <a href="https://sunparis.github.io/VectorPro.site/functions/insert">insert</a>, which either copies or moves existing objects into the container.</p>
+<p>A similar member function exists, <a href="https://sunparis.github.io/VectorPro.site/functions/insert"><code>vector_pro::insert</code></a> , which either copies or moves existing objects into the container.</p>
+<blockquote>
+<p>Please note that if the variable <code>position</code> exceeds the bounds of the vector, this function will throw an <a href="https://sunparis.github.io/VectorPro.site/new/vector_pro_exception/"><code>exception</code></a> .</p>
+</blockquote>
 <h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h3>
 <ol>
-<li><code>position</code><br>Position in the container where the new element is inserted.<br>Can be a <code>size_type</code> or an <code>(const_)iterator_pro</code>.</li>
+<li><code>position</code><br>Position in the container where the new element is inserted.<br>Can be <code>size_type</code> / <a href="https://sunparis.github.io/VectorPro.site/new/iterator_pro/"><code>iterator_pro</code></a> / <a href="https://sunparis.github.io/VectorPro.site/new/const_iterator_pro/"><code>const_iterator_pro</code></a>.</li>
 <li><code>val</code><br>Value of the new element.</li>
 </ol>
 <h3 id="return-value">Return value<a class="headerlink" href="#return-value" title="Permanent link">&para;</a></h3>
-<p>Type will be same as the position. (<code>size_type</code> / <code>iterator_pro</code> / <code>const_iterator_pro</code>)</p>
+<p>An position that points to the newly emplaced element.</p>
+<p>Type will be same as the position. ( <code>size_type</code> / <a href="https://sunparis.github.io/VectorPro.site/new/iterator_pro/"><code>iterator_pro</code></a> / <a href="https://sunparis.github.io/VectorPro.site/new/const_iterator_pro/"><code>const_iterator_pro</code></a> )</p>
 <h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
 <div class="language-c++ highlight"><span class="filename">C++</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// vector_pro::emplace</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>

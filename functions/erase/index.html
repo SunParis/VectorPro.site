@@ -1471,19 +1471,19 @@
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">iterator_pro</span><span class="o">&lt;</span><span class="n">value_type</span><span class="o">&gt;</span><span class="w"> </span><span class="n">erase</span><span class="p">(</span><span class="n">const_iterator_pro</span><span class="o">&lt;</span><span class="n">value_type</span><span class="o">&gt;</span><span class="w"> </span><span class="n">from</span><span class="p">,</span><span class="w"> </span><span class="n">const_iterator_pro</span><span class="o">&lt;</span><span class="n">value_type</span><span class="o">&gt;</span><span class="w"> </span><span class="n">exclude_to</span><span class="p">);</span>
 </span></code></pre></div>
 <h3 id="erase-elements">Erase elements<a class="headerlink" href="#erase-elements" title="Permanent link">&para;</a></h3>
-<p>Removes from the <a href="https://sunparis.github.io/VectorPro.site/">vector</a> either a single element (<code>position</code>) or a range of elements (<code>[from, exclude_to)</code>).</p>
+<p>Removes from the <a href="https://sunparis.github.io/VectorPro.site/">vector</a> either a single element ( <code>position</code> ) or a range of elements ( <code>[from, exclude_to)</code> ).</p>
 <p>This effectively reduces the container <a href="https://sunparis.github.io/VectorPro.site/functions/size">size</a> by the number of elements removed, which are destroyed.</p>
 <blockquote>
-<p>Please note that if the variables <code>position</code>,  <code>from</code>, or <code>exclude_to</code> exceed the bounds of the vector, this function will throw an exception. You will also get one when <code>from</code> is gt <code>exclude_to</code> .</p>
+<p>Please note that if the variables <code>position</code>,  <code>from</code>, or <code>exclude_to</code> exceed the bounds of the vector, this function will throw an <a href="https://sunparis.github.io/VectorPro.site/new/vector_pro_exception/"><code>exception</code></a> . You will also get one when <code>from</code> is gt <code>exclude_to</code> .</p>
 </blockquote>
 <h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h3>
 <ol>
-<li><code>position</code><br>Position in the container where the target element is.<br>Can be a <code>size_type</code> or an <code>(const_)iterator_pro</code>.</li>
+<li><code>position</code><br>Position in the container where the target element is.<br>Can be <code>size_type</code> / <a href="https://sunparis.github.io/VectorPro.site/new/iterator_pro/"><code>iterator_pro</code></a> / <a href="https://sunparis.github.io/VectorPro.site/new/const_iterator_pro/"><code>const_iterator_pro</code></a> .</li>
 <li><code>from</code> ,  <code>exclude_to</code><br>The range of elements we are going to erase.<br>Can be  <code>size_type</code>s or  <code>(const_)iterator_pro</code>s.<br>The range includes all the elements between <code>from</code> and <code>exclude_to</code>, including the element pointed by <code>from</code> but not the one pointed by <code>exclude_to</code>.</li>
 </ol>
 <h3 id="return-value">Return value<a class="headerlink" href="#return-value" title="Permanent link">&para;</a></h3>
-<p>Type will be same as the position. (<code>size_type</code> / <code>iterator_pro</code>)</p>
 <p>The return value will point to the new location of the element that followed the last element erased by the function call.</p>
+<p>Type will be same as the position. (<code>size_type</code> / <a href="https://sunparis.github.io/VectorPro.site/new/iterator_pro/"><code>iterator_pro</code></a> / <a href="https://sunparis.github.io/VectorPro.site/new/const_iterator_pro/"><code>const_iterator_pro</code></a> )</p>
 <h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
 <div class="language-c++ highlight"><span class="filename">C++</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// erasing from vector_pro</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>

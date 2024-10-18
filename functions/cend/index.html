@@ -1468,13 +1468,13 @@
 <div class="language-c++ highlight"><span class="filename">C++</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">const_iterator_pro</span><span class="o">&lt;</span><span class="n">value_type</span><span class="o">&gt;</span><span class="w"> </span><span class="n">cend</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
 </span></code></pre></div>
 <h3 id="return-const_iterator-to-beginning">Return const_iterator to beginning<a class="headerlink" href="#return-const_iterator-to-beginning" title="Permanent link">&para;</a></h3>
-<p>Returns a <code>const_iterator_pro</code> pointing to the <code>past-the-end</code> in the container.</p>
-<p>Just like the <code>const_iterator</code> , which is an iterator that points to const content. This iterator can be increased and decreased (unless it is itself also const), just like the <code>iterator_pro</code> returned by <a href="https://sunparis.github.io/VectorPro.site/functions/end">vector_pro::end</a>, but it cannot be used to modify the contents it points to, even if the <a href="https://sunparis.github.io/VectorPro.site/">vector</a> object is not itself const.</p>
-<p>If the container is <a href="https://sunparis.github.io/VectorPro.site/functions/empty">empty</a>, this function returns the same as <a href="https://sunparis.github.io/VectorPro.site/cbegin">vector_pro::cbegin</a>.</p>
+<p>Returns a <a href="https://sunparis.github.io/VectorPro.site/new/const_iterator_pro/"><code>const_iterator_pro</code></a> pointing to the <code>past-the-end</code> in the container.</p>
+<p>Just like the <code>const_iterator</code> , which is an iterator that points to const content. This iterator can be increased and decreased (unless it is itself also const), just like the <a href="https://sunparis.github.io/VectorPro.site/new/iterator_pro/"><code>iterator_pro</code></a> which is returned by <a href="https://sunparis.github.io/VectorPro.site/functions/end"><code>vector_pro::end</code></a>, but it cannot be used to modify the contents it points to, even if the <a href="https://sunparis.github.io/VectorPro.site/">vector</a> object is not itself const.</p>
+<p>If the container is <a href="https://sunparis.github.io/VectorPro.site/functions/empty">empty</a>, this function returns the same as <a href="https://sunparis.github.io/VectorPro.site/cbegin"><code>vector_pro::cbegin</code></a>.</p>
 <h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h3>
 <p>none</p>
 <h3 id="return-value">Return value<a class="headerlink" href="#return-value" title="Permanent link">&para;</a></h3>
-<p>A <code>const_iterator</code> to the end of the sequence.</p>
+<p>A <a href="https://sunparis.github.io/VectorPro.site/new/const_iterator_pro/"><code>const_iterator_pro</code></a> to the end of the sequence.</p>
 <h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
 <div class="language-c++ highlight"><span class="filename">C++</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// vector_pro::cbegin/cend</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
