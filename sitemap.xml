@@ -181,11 +181,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sunparis.github.io/VectorPro.site/new/exception_pro/</loc>
-         <lastmod>2024-10-18</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sunparis.github.io/VectorPro.site/new/find/</loc>
          <lastmod>2024-10-18</lastmod>
          <changefreq>daily</changefreq>
@@ -227,6 +222,11 @@
     </url>
     <url>
          <loc>https://sunparis.github.io/VectorPro.site/new/sort/</loc>
+         <lastmod>2024-10-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sunparis.github.io/VectorPro.site/new/vector_pro_exception/</loc>
          <lastmod>2024-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
