@@ -1498,15 +1498,16 @@
 <h3 id="find-an-element">Find an element<a class="headerlink" href="#find-an-element" title="Permanent link">&para;</a></h3>
 <p>Returns the position of the first element which is equal to the <code>target</code> .</p>
 <blockquote>
-<p>To note is that you must ensure your <code>value_type</code> implements the <code>==</code> comparison operator, or you must pass a function of the type <code>int(const value_type &amp;, const value_type &amp;)</code> as a parameter.</p>
+<p>To note that you must ensure your <code>value_type</code> implements the <code>==</code> comparison operator, or you must pass a function of the type <code>int(const value_type &amp;, const value_type &amp;)</code> as a parameter.</p>
 </blockquote>
 <h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h3>
 <ol>
 <li><code>target</code><br>The target value you are going to find.</li>
-<li><code>from</code> , <code>exclude_to</code><br>The range of elements we are find the target.<br>Can be  <code>size_type</code>s or  <code>(const_)iterator_pro</code>s.<br>The range includes all the elements between <code>from</code> and <code>exclude_to</code>, including the element pointed by <code>from</code> but not the one pointed by <code>exclude_to</code>.</li>
+<li><code>from</code> , <code>exclude_to</code><br>The range of elements we are find the target.<br>Can be  <code>size_type</code>s or  <code>(const_)iterator_pro</code>s.<br>If the types are <code>szie_type</code>s , the params have default values <code>0</code> (start of the container) and <code>-1</code> (end of the container). <br>The range includes all the elements between <code>from</code> and <code>exclude_to</code>, including the element pointed by <code>from</code> but not the one pointed by <code>exclude_to</code>.</li>
 </ol>
 <h3 id="return-value">Return value<a class="headerlink" href="#return-value" title="Permanent link">&para;</a></h3>
 <p>The position of the first element which is equal to the <code>target</code> . (<code>size_type</code> / <code>iterator_pro</code> / <code>const_iterator_pro</code>)</p>
+<p>If nothing found, <code>-1</code> (<code>size_type</code>) or the <code>exclude_end</code> (<code>iterator_pro</code> / <code>const_iterator_pro</code>) will be returned.</p>
 <h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
 <div class="language-c++ highlight"><span class="filename">C++</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// vector_pro::find</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
