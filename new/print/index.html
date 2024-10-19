@@ -1193,9 +1193,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#todo" class="md-nav__link">
+  <a href="#print-the-vector_pro" class="md-nav__link">
     <span class="md-ellipsis">
-      // TODO
+      Print the vector_pro
     </span>
   </a>
   
@@ -1426,9 +1426,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#todo" class="md-nav__link">
+  <a href="#print-the-vector_pro" class="md-nav__link">
     <span class="md-ellipsis">
-      // TODO
+      Print the vector_pro
     </span>
   </a>
   
@@ -1486,19 +1486,44 @@
 
 
 <h1 id="vector_proprint">vector_pro::print<a class="headerlink" href="#vector_proprint" title="Permanent link">&para;</a></h1>
-<div class="language-c++ highlight"><span class="filename">C++</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// TODO</span>
+<div class="language-c++ highlight"><span class="filename">C++</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">print</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">void</span><span class="w"> </span><span class="nf">print</span><span class="p">(</span><span class="kt">void</span><span class="p">(</span><span class="n">print</span><span class="p">)(</span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="o">&amp;</span><span class="p">))</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
 </span></code></pre></div>
-<h3 id="todo">// TODO<a class="headerlink" href="#todo" title="Permanent link">&para;</a></h3>
-<p>// TODO</p>
+<h3 id="print-the-vector_pro">Print the <code>vector_pro</code><a class="headerlink" href="#print-the-vector_pro" title="Permanent link">&para;</a></h3>
+<p>Print the <code>vector_pro</code>.</p>
+<blockquote>
+<p>Please note that you must ensure your <code>value_type</code> implements the <code>&lt;&lt;</code> stream insertion operator.</p>
+<p>Otherwise, you should pass a function <code>void(value_type&amp;)</code> as a param to tell us how to print the <code>value_type</code></p>
+</blockquote>
 <h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h3>
-<p>// TODO</p>
+<ol>
+<li><code>print</code><br>A function can be call to print the <code>value_type</code>.</li>
+</ol>
 <h3 id="return-value">Return value<a class="headerlink" href="#return-value" title="Permanent link">&para;</a></h3>
-<p>// TODO</p>
+<p>none</p>
 <h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
-<div class="language-c++ highlight"><span class="filename">C++</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// TODO</span>
+<div class="language-c++ highlight"><span class="filename">C++</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// vector_pro::print</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;vector_pro.h&quot;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="cm">/**</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="cm"> * Output:</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="cm"> * myvector contains: [ 32, 72, 55, 46, 32, 12, 61, 84, 39, 97 ]</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="cm"> */</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="w"> </span><span class="p">()</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="p">{</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="n">vector_pro</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">myvector</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span><span class="w"> </span><span class="mi">72</span><span class="p">,</span><span class="w"> </span><span class="mi">55</span><span class="p">,</span><span class="w"> </span><span class="mi">46</span><span class="p">,</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="mi">61</span><span class="p">,</span><span class="w"> </span><span class="mi">84</span><span class="p">,</span><span class="w"> </span><span class="mi">39</span><span class="p">,</span><span class="w"> </span><span class="mi">97</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span><span class="c1">// print</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;myvector contains: &quot;</span><span class="p">;</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">  </span><span class="n">myvector</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="p">}</span>
 </span></code></pre></div>
 <h3 id="complexity">Complexity<a class="headerlink" href="#complexity" title="Permanent link">&para;</a></h3>
-<p>// TODO</p>
+<p>Linear in <a href="https://sunparis.github.io/VectorPro.site/functions/size">size</a>.</p>
 
 
 
