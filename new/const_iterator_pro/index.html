@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#iterator_pro" class="md-skip">
+        <a href="#const_iterator_pro" class="md-skip">
           Skip to content
         </a>
       
@@ -1046,9 +1046,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#iterator-of-vector_pro" class="md-nav__link">
+  <a href="#const-iterator-of-vector_pro" class="md-nav__link">
     <span class="md-ellipsis">
-      Iterator of vector_pro
+      Const iterator of vector_pro
     </span>
   </a>
   
@@ -1387,9 +1387,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#iterator-of-vector_pro" class="md-nav__link">
+  <a href="#const-iterator-of-vector_pro" class="md-nav__link">
     <span class="md-ellipsis">
-      Iterator of vector_pro
+      Const iterator of vector_pro
     </span>
   </a>
   
@@ -1428,18 +1428,17 @@
                   
 
 
-<h1 id="iterator_pro">iterator_pro<a class="headerlink" href="#iterator_pro" title="Permanent link">&para;</a></h1>
-<div class="language-c++ highlight"><span class="filename">C++</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">value_type</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">iterator_pro</span><span class="p">;</span><span class="w"> </span><span class="c1">// generic template</span>
+<h1 id="const_iterator_pro">const_iterator_pro<a class="headerlink" href="#const_iterator_pro" title="Permanent link">&para;</a></h1>
+<div class="language-c++ highlight"><span class="filename">C++</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">value_type</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">const_iterator_pro</span><span class="p">;</span><span class="w"> </span><span class="c1">// generic template</span>
 </span></code></pre></div>
-<h3 id="iterator-of-vector_pro">Iterator of <a href="https://sunparis.github.io/VectorPro.site/"><code>vector_pro</code></a><a class="headerlink" href="#iterator-of-vector_pro" title="Permanent link">&para;</a></h3>
-<p>You can get one by calling <a href="https://sunparis.github.io/VectorPro.site/functions/begin/"><code>vector_pro::begin</code></a>, <a href="https://sunparis.github.io/VectorPro.site/functions/end/"><code>vector_pro::end</code></a>, <a href="https://sunparis.github.io/VectorPro.site/functions/rbegin/"><code>vector_pro::rbegin</code></a> or <a href="https://sunparis.github.io/VectorPro.site/functions/rend/"><code>vector_pro::rend</code></a> .</p>
-<p>The return value will be an <code>iterator_pro</code> points to the beginning, end, reverse beginning and reverse end of the of the sequence respectively.</p>
-<p>By using the dereference operator <code>*</code> you can access the data.</p>
+<h3 id="const-iterator-of-vector_pro">Const iterator of <a href="https://sunparis.github.io/VectorPro.site/"><code>vector_pro</code></a><a class="headerlink" href="#const-iterator-of-vector_pro" title="Permanent link">&para;</a></h3>
+<p>You can get one by calling <a href="https://sunparis.github.io/VectorPro.site/functions/cbegin/"><code>vector_pro::cbegin</code></a>, <a href="https://sunparis.github.io/VectorPro.site/functions/cend/"><code>vector_pro::cend</code></a>, <a href="https://sunparis.github.io/VectorPro.site/functions/crbegin/"><code>vector_pro::crbegin</code></a> or <a href="https://sunparis.github.io/VectorPro.site/functions/crend/"><code>vector_pro::rend</code></a> .</p>
+<p>The return value will be an <code>const_iterator_pro</code> points to the beginning, end, reverse beginning and reverse end of the of the sequence respectively.</p>
+<p>By using the dereference operator <code>*</code> you can access the <strong>const</strong> data.</p>
 <blockquote>
-<p>Keep in mind that the type of the <code>reverse iterator</code> is also <code>iterator_pro</code> but will move in an opposite way.</p>
-<p>Also note that <code>iterator_pro</code> and <a href="https://cplusplus.com/reference/iterator/iterator/"><code>std::iterator</code></a> are not compatible. </p>
-<p>Additionally, using <code>iterator_pro</code> for any operations or data access will not throw exceptions. Please ensure that memory errors will not occur when using it.</p>
-<p>See also <a href="https://sunparis.github.io/VectorPro.site/new/const_iterator_pro/"><code>const_iterator_pro</code></a> .</p>
+<p>Keep in mind that the type of the <code>reverse const iterator</code> is also <code>const_iterator_pro</code> but will move in an opposite way.</p>
+<p>Additionally, using <code>const_iterator_pro</code> for any operations or data access will not throw exceptions. Please ensure that memory errors will not occur when using it.</p>
+<p>See also <a href="https://sunparis.github.io/VectorPro.site/new/iterator_pro/"><code>iterator_pro</code></a> .</p>
 </blockquote>
 <h3 id="member-functions">Member functions<a class="headerlink" href="#member-functions" title="Permanent link">&para;</a></h3>
 <table>
@@ -1470,39 +1469,40 @@
 </span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="kt">bool</span><span class="w"> </span><span class="nf">get_reverse_flag</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
 </span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
 </span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1">// 4.</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">iterator_pro</span><span class="w"> </span><span class="k">operator</span><span class="o">++</span><span class="p">();</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">iterator_pro</span><span class="w"> </span><span class="k">operator</span><span class="o">--</span><span class="p">();</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">const_iterator_pro</span><span class="w"> </span><span class="k">operator</span><span class="o">++</span><span class="p">();</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">const_iterator_pro</span><span class="w"> </span><span class="k">operator</span><span class="o">--</span><span class="p">();</span>
 </span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
 </span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="c1">// 5.</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="n">iterator_pro</span><span class="w"> </span><span class="k">operator</span><span class="o">++</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="n">iterator_pro</span><span class="w"> </span><span class="k">operator</span><span class="o">--</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="n">const_iterator_pro</span><span class="w"> </span><span class="k">operator</span><span class="o">++</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="n">const_iterator_pro</span><span class="w"> </span><span class="k">operator</span><span class="o">--</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
 </span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>
 </span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="c1">// 6.</span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="n">iterator_pro</span><span class="w"> </span><span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">step</span><span class="p">);</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="n">iterator_pro</span><span class="w"> </span><span class="k">operator</span><span class="o">-</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">step</span><span class="p">);</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="n">const_iterator_pro</span><span class="w"> </span><span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">step</span><span class="p">);</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="n">const_iterator_pro</span><span class="w"> </span><span class="k">operator</span><span class="o">-</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">step</span><span class="p">);</span>
 </span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>
 </span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="c1">// 7.</span>
 </span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="kt">bool</span><span class="w"> </span><span class="k">operator</span><span class="o">==</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">iterator_pro</span><span class="o">&lt;</span><span class="n">value_type</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">another</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
 </span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="kt">bool</span><span class="w"> </span><span class="k">operator</span><span class="o">!=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">iterator_pro</span><span class="o">&lt;</span><span class="n">value_type</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">another</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
 </span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>
 </span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="c1">// 8.</span>
-</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="n">value_type</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">*</span><span class="p">();</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">*</span><span class="p">();</span>
 </span></code></pre></div>
 <ol>
-<li>Obtain the index of the data pointed to by <code>iterator_pro</code> in its container.</li>
-<li>Obtain the data of the container that <code>iterator_pro</code> points to.</li>
+<li>Obtain the index of the data pointed to by <code>const_iterator_pro</code> in its container.</li>
+<li>Obtain the data of the container that <code>const_iterator_pro</code> points to.</li>
 <li>Whether the iterator is a reverse iterator.</li>
-<li>Return itself after moving the <code>iterator_pro</code> by one step.</li>
-<li>Return itself before moving the <code>iterator_pro</code> by one step</li>
-<li>Move the <code>iterator_pro</code> by a specified number of steps.</li>
-<li>Whether the two <code>iterator_pro</code>s point to the same data.</li>
-<li>Access the data.</li>
+<li>Return itself after moving the <code>const_iterator_pro</code> by one step.</li>
+<li>Return itself before moving the <code>const_iterator_pro</code> by one step</li>
+<li>Move the <code>const_iterator_pro</code> by a specified number of steps.</li>
+<li>Whether the two <code>const_iterator_pro</code>s point to the same data.</li>
+<li>Access the <strong>const </strong>data.</li>
 </ol>
 <blockquote>
 <p>If the iterator is a reversed one, both <code>++</code> / <code>--</code> and <code>+</code> / <code>-</code> will move <code>backward</code> / <code>forward</code> . </p>
+<p>Note that a <a href="https://sunparis.github.io/VectorPro.site/new/iterator_pro/"><code>vector_pro</code></a> can convert into a <code>const_iterator_pro</code> , while the opposite is not true.</p>
 </blockquote>
 <h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
-<p>See more in <a href="https://sunparis.github.io/VectorPro.site/functions/begin/"><code>vector_pro::begin</code></a>, <a href="https://sunparis.github.io/VectorPro.site/functions/end/"><code>vector_pro::end</code></a>, <a href="https://sunparis.github.io/VectorPro.site/functions/rbegin/"><code>vector_pro::rbegin</code></a> and <a href="https://sunparis.github.io/VectorPro.site/functions/rend/"><code>vector_pro::rend</code></a> .</p>
+<p>See more in <a href="https://sunparis.github.io/VectorPro.site/functions/cbegin/"><code>vector_pro::cbegin</code></a>, <a href="https://sunparis.github.io/VectorPro.site/functions/cend/"><code>vector_pro::cend</code></a>, <a href="https://sunparis.github.io/VectorPro.site/functions/crbegin/"><code>vector_pro::crbegin</code></a> and <a href="https://sunparis.github.io/VectorPro.site/functions/crend/"><code>vector_pro::rend</code></a> .</p>
 
 
 
