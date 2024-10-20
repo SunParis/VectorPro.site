@@ -1,0 +1,12 @@
+@media (prefers-color-scheme: dark) {
+    .md-header__title img {
+      content: url('images/logo-dark.png');
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    .md-header__title img {
+      content: url('images/logo-light.png');
+    }
+  }
+  
