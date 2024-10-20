@@ -231,7 +231,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sunparis.github.io/VectorPro.site/tests/test1/</loc>
+         <loc>https://sunparis.github.io/VectorPro.site/tests/construct_test/</loc>
+         <lastmod>2024-10-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sunparis.github.io/VectorPro.site/tests/insert_test/</loc>
+         <lastmod>2024-10-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sunparis.github.io/VectorPro.site/tests/push_test/</loc>
+         <lastmod>2024-10-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sunparis.github.io/VectorPro.site/tests/traverse_test/</loc>
          <lastmod>2024-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
