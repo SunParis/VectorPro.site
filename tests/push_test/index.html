@@ -1496,7 +1496,7 @@
 <p>The test compared the <code>push_back</code> operation times of <a href="https://sunparis.github.io/VectorPro.site/"><code>vector_pro</code></a> and <a href="https://cplusplus.com/reference/vector/vector/"><code>std::vector</code></a> with the same initial list length, under different element sizes and quantities.</p>
 <h3 id="test-code"><strong>Test Code</strong><a class="headerlink" href="#test-code" title="Permanent link">&para;</a></h3>
 <p>See the full code at <a href="https://github.com/SunParis/VectorPro/blob/main/tests/push_test.cpp"><code>push_test</code></a> .</p>
-<p>We used three different element sizes (<code>small</code>, <code>medium</code>, <code>large</code>) for testing, with the number of elements ranging from 1 to 1901.</p>
+<p>We used three different element sizes (<code>small</code>, <code>medium</code>, <code>large</code>) for testing, with the number of elements ranging from 1 to 1901, increasing by 100 for each test.</p>
 <p>To ensure the reliability of the test results in each scenario, we conducted 20 tests for each container and took the average. In the first 10 tests, <code>vector_pro</code> started first, while in the latter 10 tests, <code>std::vector</code> started first.</p>
 <h3 id="result"><strong>Result</strong><a class="headerlink" href="#result" title="Permanent link">&para;</a></h3>
 <p>The test results are as follows: as the number of elements and the size of elements being <code>push_back</code> increases, the time consumption difference between <code>vector_pro</code> and <code>std::vector</code> gradually widens.</p>

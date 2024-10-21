@@ -1493,16 +1493,16 @@
 
 
 <h1 id="traverse-test">Traverse Test<a class="headerlink" href="#traverse-test" title="Permanent link">&para;</a></h1>
-<p>The test compared the <code>traverse</code> operation times of <a href="https://sunparis.github.io/VectorPro.site/"><code>vector_pro</code></a> and <a href="https://cplusplus.com/reference/vector/vector/"><code>std::vector</code></a> with the same length, under different element sizes.</p>
+<p>We compared the time consumption of traversing the container in <a href="https://sunparis.github.io/VectorPro.site/"><code>vector_pro</code></a> and <a href="https://cplusplus.com/reference/vector/vector/"><code>std::vector</code></a> with different element sizes and quantities. </p>
 <h3 id="test-code"><strong>Test Code</strong><a class="headerlink" href="#test-code" title="Permanent link">&para;</a></h3>
 <p>See the full code at <a href="https://github.com/SunParis/VectorPro/blob/main/tests/traverse_test.cpp"><code>traverse_test</code></a> .</p>
-<p>We used three different element sizes (<code>small</code>, <code>medium</code>, <code>large</code>) for testing, with the number of elements ranging from 1 to 4751.</p>
+<p>We used three different element sizes (<code>small</code>, <code>medium</code>, <code>large</code>) for testing, with the number of elements ranging from 1 to 901, increasing by 100 for each test.</p>
 <p>To ensure the reliability of the test results in each scenario, we conducted 20 tests for each container and took the average. In the first 10 tests, <code>vector_pro</code> started first, while in the latter 10 tests, <code>std::vector</code> started first.</p>
 <blockquote>
-<p>To increase the distinctiveness of the results, we performed <code>insert</code> operations at the begin of the sequence.</p>
+<p>The traversal test was done using <a href="https://sunparis.github.io/VectorPro.site/new/iterator_pro/"><code>iterator_pro</code></a> and <a href="https://cplusplus.com/reference/iterator/iterator/"><code>std::iterator</code></a> rather than direct indexing.</p>
 </blockquote>
 <h3 id="result"><strong>Result</strong><a class="headerlink" href="#result" title="Permanent link">&para;</a></h3>
-<p>The test results are as follows: as the number of elements and the size of elements being <code>insert</code> increases, the time consumption difference between <code>vector_pro</code> and <code>std::vector</code> gradually widens.</p>
+<p>The test results are as follows: as the number of elements in the container increase, the traversal time for both <code>vector_pro</code> and <code>std::vector</code> also increases linearly. However, due to differences in data structure, the traversal time for <code>vector_pro</code> is slightly higher than that for <code>std::vector</code>. Nonetheless, this difference becomes less noticeable as the element size increases.</p>
 <p><img alt="" src="../traverse_test.assets/traverse_result.png" /></p>
 <blockquote>
 <p>You can find detailed information on each <a href="https://github.com/SunParis/VectorPro/blob/main/tests/test_object.hpp">test element</a>, the <a href="https://github.com/SunParis/VectorPro/blob/main/tests/get_time.hpp">time measurement functions</a> used, and the <a href="https://github.com/SunParis/VectorPro/blob/main/tests/system.info">system specifications</a> under the project's directory.</p>

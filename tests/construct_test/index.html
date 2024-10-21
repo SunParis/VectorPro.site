@@ -1497,7 +1497,7 @@
 <p>Additionally, since <code>vector_pro</code> did not assign default values to each element during initialization, the comparison also included the time consumed when default values were provided for both.</p>
 <h3 id="test-code"><strong>Test Code</strong><a class="headerlink" href="#test-code" title="Permanent link">&para;</a></h3>
 <p>See the full code at <a href="https://github.com/SunParis/VectorPro/blob/main/tests/build_test.cpp"><code>build_test 1</code></a> and <a href="https://github.com/SunParis/VectorPro/blob/main/tests/build_test_2.cpp"><code>build_test 2</code></a> .</p>
-<p>We used three different element sizes (<code>small</code>, <code>medium</code>, <code>large</code>) for testing, with the number of elements ranging from 1 to 1901.</p>
+<p>We used three different element sizes (<code>small</code>, <code>medium</code>, <code>large</code>) for testing, with the number of elements ranging from 1 to 1901, increasing by 100 for each test.</p>
 <p>To ensure the reliability of the test results in each scenario, we conducted 20 tests for each container and took the average. In the first 10 tests, <code>vector_pro</code> started first, while in the latter 10 tests, <code>std::vector</code> started first.</p>
 <h3 id="result"><strong>Result</strong><a class="headerlink" href="#result" title="Permanent link">&para;</a></h3>
 <p>The results of the first test are as follows. There is a significant difference in the construction time of <code>vector_pro</code> and <code>std::vector</code> for all initialization lengths.</p>
